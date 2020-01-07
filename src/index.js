@@ -158,8 +158,8 @@ class Nistagram extends multi.inherit(Api, Utils) {
 						csrfToken: saveCredentials.session[tIdx].split(';')[0].split('=').pop(),
 					};
 					const newCredential = Object.assign({}, userCredential, saveCredentials);
-					fs.writeFileSync(pathLocation, JSON.stringify(newCredential, null, 2));
-					console.info(`=>> data credential save on ${pathLocation}`);
+					// fs.writeFileSync(pathLocation, JSON.stringify(newCredential, null, 2));
+					// console.info(`=>> data credential save on ${pathLocation}`);
 					this.setSession(newCredential);
 					return this;
 				}
