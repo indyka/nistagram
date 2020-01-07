@@ -12,7 +12,8 @@
     "build": "babel src --out-dir lib",
     "test": "jest --runInBand --verbose",
     "coverage": "jest --coverage --runInBand --verbose",
-    "eslint": "eslint src/**/*.js --ignore-pattern \"node_modules/\""
+    "eslint": "eslint src/**/*.js --ignore-pattern \"node_modules/\"",
+    "prepare": "npm run build"
   },
   "engines": {
     "node": ">=8"
